@@ -36,7 +36,7 @@ updatingCountDown();
 // Displays who is visiting the page
 nameInput.addEventListener('input', () => {
     const nameDisplay = nameInput.value;
-    greeting.innerHTML = `Hello, ${nameDisplay}!`;
+    greeting.innerHTML = `Welcome, ${nameDisplay} 🥳 !`;
 })
 
 
