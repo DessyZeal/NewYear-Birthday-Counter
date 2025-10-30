@@ -18,22 +18,22 @@ body {
     border-radius: 1rem;
 }
 #days {
-    padding: 20px;
+    padding: 15px;
     border-radius: 10px;
     font-size: 2rem;
 }
 #hours {
-    padding: 20px;
+    padding: 15px;
     border-radius: 10px;
     font-size: 2rem;
 }
 #mins {
-    padding: 20px;
+    padding: 15px;
     border-radius: 10px;
     font-size: 2rem;
 }
 #secs {
-    padding: 20px;
+    padding: 15px;
     border-radius: 10px;
     font-size: 2rem;
 }
@@ -54,4 +54,18 @@ input {
 }
 input:focus {
     border: 2px solid white;
+}
+
+/* make this page responsive on mobile screens */
+@media (max-width: 600px) {
+    #counterContainer {
+        flex-direction: column;
+        /* gap: 10px; */
+    }
+    p {
+        font-size: 1.2rem;
+    }
+    input {
+        font-size: 1rem;
+    }
 }
