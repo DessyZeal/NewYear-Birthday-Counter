@@ -1,8 +1,10 @@
-const countdown = document.getElementById('countDown');
+const countdown = document.getElementById('counterContainer');
 const daysElement = document.getElementById('days');
 const hoursElement = document.getElementById('hours');
 const minsElement = document.getElementById('mins');
 const secsElement = document.getElementById('secs');
+const nameInput = document.getElementById('nameInput');
+const greeting = document.getElementById('greeting');
 
 const NewYearDate = new Date().getFullYear() + 1;
 const newYearTime = new Date (`january 1 ${NewYearDate} 00:00:00`);
@@ -30,6 +32,12 @@ function updatingCountDown() {
 }
 setInterval(updatingCountDown, 1000);
 updatingCountDown();
+
+// Displays who is visiting the page
+nameInput.addEventListener('input', () => {
+    const nameDisplay = nameInput.value;
+    greeting.innerHTML = `Hello, ${nameDisplay}!`;
+})
 
 
 
